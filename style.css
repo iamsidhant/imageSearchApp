@@ -82,9 +82,44 @@ form{
     transition: background-color 0.3s ease-in-out;
 }
 
+.search-result:hover a{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 #show-more-button{
+    background-color: #008cba;
+    border: none;
+    color: white;
+    padding: 10px 20px;
     display: block;
+    margin: 20px auto;
     text-align: center;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
     display: none;
+}
+
+#show-more-button:hover{
+    background-color: #0077b5;
+}
+
+@media screen and (max-width: 768px) {
+    .search-result{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .search-result{
+        width: 100%;
+    }
+
+    form{
+        flex-direction: column;
+    }
+
+    #search-input{
+        width: 85%;
+        margin-bottom: 20px;
+    }
 }
