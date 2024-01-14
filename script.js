@@ -33,7 +33,7 @@ async function searchImages(){
 
         imageWrapper.appendChild(image);
         imageWrapper.appendChild(imageLink);
-        imageWrapper.appendChild(imageWrapper);
+        searchResultsEl.appendChild(imageWrapper);
     });
 
     page++;
